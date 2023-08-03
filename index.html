@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      // TODO: Add your JavaScript code here
+      function printDavesLocation() {
+        let text = document.getElementById("response").value;
+        let lowercase = text.toLowerCase();
+        if(lowercase=="yes") {
+          document.getElementById("output").innerHTML = "Dave is climbing a tree in my backyard"
+        }
+        else {
+          document.getElementById("output").innerHTML = "Please help me find Dave "
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- TODO: Add your HTML code here -->
+    <h1>Have you seen Dave? He's my cat</h1>
+    <textarea id="response"></textarea>
+    <button onclick="printDavesLocation()">Find Dave</button>
+    <p id="output"></p>
+  </body>
+</html>
